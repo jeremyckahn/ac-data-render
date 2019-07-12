@@ -36,7 +36,7 @@ export default class App extends Component {
     } = this;
     return (
       <div className="App">
-        contacts && <pre>{JSON.stringify(contacts, null, 2)}</pre>
+        {contacts && <pre>{JSON.stringify(contacts, null, 2)}</pre>}
       </div>
     );
   }
