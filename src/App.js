@@ -1,11 +1,15 @@
-import React, { Component } from "react";
-import "./App.sass";
+import React, { Component } from 'react';
+import './App.sass';
 
 const { REACT_APP_API_KEY, REACT_APP_API_URL } = process.env;
 
+const sideloadArgs = ['deals'];
+const url = `${REACT_APP_API_URL}?include=${[sideloadArgs.join(',')]}`;
+
 export default class App extends Component {
   state = {
-    contacts: []
+    contacts: [],
+    deals: [],
   };
 
   constructor() {
@@ -15,29 +19,41 @@ export default class App extends Component {
   }
 
   static fetchContacts = () =>
-    fetch(REACT_APP_API_URL, {
-      method: "GET",
+    fetch(url, {
+      method: 'GET',
       headers: {
         // Ideally REACT_APP_API_KEY would be provided by some sort of session
         // broker, but that is out of scope for this project.
-        "Api-Token": REACT_APP_API_KEY,
-        "x-requested-with": "xhr",
-        "Content-Type": "application/json"
-      }
+        'Api-Token': REACT_APP_API_KEY,
+        'x-requested-with': 'xhr',
+        'Content-Type': 'application/json',
+      },
     })
       .catch(() => {})
       .then(res => res.json());
 
-  async hydrate() {
-    const { contacts } = await App.fetchContacts();
+  /**
+   * @param {Object} contact
+   * @returns {number}
+   */
+  contactValue = contact =>
+    contact.deals.reduce(
+      (acc, dealId) =>
+        acc + Number(this.state.deals.find(({ id }) => id === dealId).value),
+      0
+    );
 
-    this.setState({ contacts });
+  async hydrate() {
+    const { contacts, deals } = await App.fetchContacts();
+
+    this.setState({ contacts, deals });
   }
 
   render() {
     const {
-      state: { contacts }
+      state: { contacts, deals },
     } = this;
+
     return (
       <div className="App">
         <table>
@@ -50,14 +66,15 @@ export default class App extends Component {
             </tr>
           </thead>
           <tbody>
-            {contacts.map(({ firstName, lastName }, i) => (
+            {contacts.map((contact, i) => (
               <tr key={i}>
-                <td>{`${firstName} ${lastName}`}</td>
+                <td>{`${contact.firstName} ${contact.lastName}`}</td>
+                <td>{this.contactValue(contact)}</td>
               </tr>
             ))}
           </tbody>
         </table>
-        {contacts && <pre>{JSON.stringify(contacts, null, 2)}</pre>}
+        {contacts && <pre>{JSON.stringify({ contacts, deals }, null, 2)}</pre>}
       </div>
     );
   }
