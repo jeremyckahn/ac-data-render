@@ -4,12 +4,18 @@ import './App.sass';
 const { REACT_APP_API_KEY, REACT_APP_API_URL } = process.env;
 
 const sideloadArgs = ['deals', 'geoIps.geoAddress', 'contactTags.tag'];
-const url = `${REACT_APP_API_URL}?include=${[sideloadArgs.join(',')]}`;
+const limit = 100;
+
+const url = `${REACT_APP_API_URL}?include=${[
+  sideloadArgs.join(','),
+]}&limit=${limit}`;
 
 export default class App extends Component {
   state = {
     contacts: [],
     contactTags: [],
+    geoAddresses: [],
+    geoIps: [],
     deals: [],
     tags: [],
   };
@@ -35,9 +41,27 @@ export default class App extends Component {
       .then(res => res.json());
 
   async hydrate() {
-    const { contacts, contactTags, deals, tags } = await App.fetchContacts();
+    try {
+      const {
+        contacts,
+        contactTags,
+        geoAddresses,
+        geoIps,
+        deals,
+        tags,
+      } = await App.fetchContacts();
 
-    this.setState({ contacts, contactTags, deals, tags });
+      this.setState({
+        contacts,
+        contactTags,
+        geoAddresses,
+        geoIps,
+        deals,
+        tags,
+      });
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   /**
@@ -53,18 +77,39 @@ export default class App extends Component {
    * @returns {number}
    */
   contactValue = contact =>
-    contact.deals.reduce(
-      (acc, dealId) =>
-        acc + Number(this.state.deals.find(({ id }) => id === dealId).value),
-      0
-    ) / 100;
+    contact.deals.reduce((acc, dealId) => {
+      const deal = this.state.deals.find(({ id }) => id === dealId);
+
+      return deal ? acc + Number(deal.value) : 0;
+    }, 0) / 100;
+
+  /**
+   * @param {Object} contact
+   * @returns {Array.<string>}
+   */
+  contactLocations = contact =>
+    contact.geoIps.reduce((acc, geoIp) => {
+      const geoIpObject = this.state.geoIps.find(({ id }) => id === geoIp);
+
+      if (geoIpObject) {
+        const { geoAddress: geoAddressId } = geoIpObject;
+
+        const { city, state, country2 } = this.state.geoAddresses.find(
+          ({ id }) => id === geoAddressId
+        );
+
+        acc.push([city, state, country2].join(', '));
+      }
+
+      return acc;
+    }, []);
 
   /**
    * @param {Object} contact
    * @returns {Array.<string>}
    */
   contactTags = contact =>
-    contact.contactTags.map(contactTag => {
+    (contact.contactTags || []).map(contactTag => {
       const { tag: tagId } = this.state.contactTags.find(
         ({ id }) => id === contactTag
       );
@@ -96,11 +141,9 @@ export default class App extends Component {
                 <td>{this.contactName(contact)}</td>
                 <td>${this.contactValue(contact).toLocaleString()}</td>
                 {/*
-                Location data does not appear to be available in the API
-                response, so short of guessing how to implement it, it is left
-                blank here.
+                The use case for displaying multiple locations is unknown, so just display the first one.
                 */}
-                <td>(Unavailable)</td>
+                <td>{this.contactLocations(contact)[0] || '-'}</td>
                 <td>{contact.deals.length}</td>
                 <td>{this.contactTags(contact).join(', ') || '-'}</td>
               </tr>

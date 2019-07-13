@@ -1,4 +1,4 @@
-export const response = {
+export const contactsResponse = {
   tags: [
     {
       tagType: 'contact',
