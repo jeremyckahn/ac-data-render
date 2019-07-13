@@ -14,19 +14,22 @@ export default class App extends Component {
     this.hydrate();
   }
 
-  fetchContacts = () =>
+  static fetchContacts = () =>
     fetch(REACT_APP_API_URL, {
       method: "GET",
       headers: {
         // Ideally REACT_APP_API_KEY would be provided by some sort of session
         // broker, but that is out of scope for this project.
         "Api-Token": REACT_APP_API_KEY,
-        "x-requested-with": "xhr"
+        "x-requested-with": "xhr",
+        "Content-Type": "application/json"
       }
-    }).then(res => res.json());
+    })
+      .catch(() => {})
+      .then(res => res.json());
 
   async hydrate() {
-    const { contacts } = await this.fetchContacts();
+    const { contacts } = await App.fetchContacts();
 
     this.setState({ contacts });
   }
@@ -37,6 +40,23 @@ export default class App extends Component {
     } = this;
     return (
       <div className="App">
+        <table>
+          <thead>
+            <tr>
+              <th>Contact Name</th>
+              <th>Total Value</th>
+              <th>Location Deals</th>
+              <th>Tags</th>
+            </tr>
+          </thead>
+          <tbody>
+            {contacts.map(({ firstName, lastName }, i) => (
+              <tr key={i}>
+                <td>{`${firstName} ${lastName}`}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
         {contacts && <pre>{JSON.stringify(contacts, null, 2)}</pre>}
       </div>
     );

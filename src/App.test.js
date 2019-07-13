@@ -1,13 +1,23 @@
 import React from "react";
 import { shallow } from "enzyme";
 import App from "./App";
+import { response } from "./fixtures/contacts";
 
 let component;
 
 beforeEach(() => {
+  jest
+    .spyOn(App, "fetchContacts")
+    .mockImplementation(() => Promise.resolve(response));
   component = shallow(<App />);
 });
 
-test("boots", () => {
-  expect(component).toHaveLength(1);
+describe("rendering", () => {
+  test("renders a table", () => {
+    expect(component.find("table")).toHaveLength(1);
+  });
+
+  test("renders a row for each contact", () => {
+    expect(component.find("tbody tr")).toHaveLength(response.contacts.length);
+  });
 });
