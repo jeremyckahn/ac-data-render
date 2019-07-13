@@ -23,6 +23,24 @@ describe('rendering', () => {
 });
 
 describe('data derivation', () => {
+  describe('contactName', () => {
+    describe('name is not available', () => {
+      test('returns default value', () => {
+        expect(component.instance().contactName(response.contacts[0])).toEqual(
+          '-'
+        );
+      });
+    });
+
+    describe('name is available', () => {
+      test('returns formatted name', () => {
+        expect(component.instance().contactName(response.contacts[12])).toEqual(
+          'Tony Gostaldo'
+        );
+      });
+    });
+  });
+
   describe('contactValue', () => {
     test('computes contact value', () => {
       expect(component.instance().contactValue(response.contacts[0])).toEqual(

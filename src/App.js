@@ -42,6 +42,14 @@ export default class App extends Component {
 
   /**
    * @param {Object} contact
+   * @returns {string}
+   */
+  contactName = ({ firstName, lastName }) => {
+    return firstName || lastName ? `${firstName} ${lastName}` : '-';
+  };
+
+  /**
+   * @param {Object} contact
    * @returns {number}
    */
   contactValue = contact =>
@@ -51,6 +59,10 @@ export default class App extends Component {
       0
     ) / 100;
 
+  /**
+   * @param {Object} contact
+   * @returns {Array.<string>}
+   */
   contactTags = contact =>
     contact.contactTags.map(contactTag => {
       const { tag: tagId } = this.state.contactTags.find(
@@ -63,7 +75,7 @@ export default class App extends Component {
 
   render() {
     const {
-      state: { contacts, contactTags, deals, tags },
+      state: { contacts },
     } = this;
 
     return (
@@ -81,7 +93,7 @@ export default class App extends Component {
           <tbody>
             {contacts.map((contact, i) => (
               <tr key={i}>
-                <td>{`${contact.firstName} ${contact.lastName}`}</td>
+                <td>{this.contactName(contact)}</td>
                 <td>${this.contactValue(contact).toLocaleString()}</td>
                 {/*
                 Location data does not appear to be available in the API
@@ -95,11 +107,6 @@ export default class App extends Component {
             ))}
           </tbody>
         </table>
-        {contacts && (
-          <pre>
-            {JSON.stringify({ contacts, contactTags, deals, tags }, null, 2)}
-          </pre>
-        )}
       </div>
     );
   }
