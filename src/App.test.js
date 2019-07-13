@@ -26,7 +26,7 @@ describe('data derivation', () => {
   describe('contactValue', () => {
     test('computes contact value', () => {
       expect(component.instance().contactValue(response.contacts[0])).toEqual(
-        12300
+        123.0
       );
     });
   });

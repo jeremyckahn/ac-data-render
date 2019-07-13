@@ -41,7 +41,7 @@ export default class App extends Component {
       (acc, dealId) =>
         acc + Number(this.state.deals.find(({ id }) => id === dealId).value),
       0
-    );
+    ) / 100;
 
   async hydrate() {
     const { contacts, deals } = await App.fetchContacts();
@@ -69,7 +69,7 @@ export default class App extends Component {
             {contacts.map((contact, i) => (
               <tr key={i}>
                 <td>{`${contact.firstName} ${contact.lastName}`}</td>
-                <td>{this.contactValue(contact)}</td>
+                <td>${this.contactValue(contact).toLocaleString()}</td>
               </tr>
             ))}
           </tbody>
