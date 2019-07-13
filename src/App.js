@@ -77,6 +77,7 @@ export default class App extends Component {
                 blank here.
                 */}
                 <td>(Unavailable)</td>
+                <td>{contact.deals.length}</td>
               </tr>
             ))}
           </tbody>
