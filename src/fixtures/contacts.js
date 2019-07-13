@@ -1,4 +1,611 @@
 export const response = {
+  tags: [
+    {
+      tagType: 'contact',
+      tag: 'Success!',
+      description: '',
+      cdate: '2017-04-11T11:14:14-05:00',
+      subscriber_count: '182',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/7/contactGoalTags',
+      },
+      id: '7',
+    },
+    {
+      tagType: 'contact',
+      tag: '12345678',
+      description: '',
+      cdate: '2018-04-04T11:44:21-05:00',
+      subscriber_count: '13',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/74/contactGoalTags',
+      },
+      id: '74',
+    },
+    {
+      tagType: 'contact',
+      tag: '123456789012345678901234567890123456',
+      description: '',
+      cdate: '2018-04-04T11:44:21-05:00',
+      subscriber_count: '13',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/75/contactGoalTags',
+      },
+      id: '75',
+    },
+    {
+      tagType: 'contact',
+      tag: '12345678901234567890123456789012345678901234567890',
+      description: '',
+      cdate: '2018-04-04T11:45:45-05:00',
+      subscriber_count: '10',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/77/contactGoalTags',
+      },
+      id: '77',
+    },
+    {
+      tagType: 'contact',
+      tag: 'pizza',
+      description: '',
+      cdate: '2017-01-18T13:39:22-06:00',
+      subscriber_count: '14',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/4/contactGoalTags',
+      },
+      id: '4',
+    },
+    {
+      tagType: 'contact',
+      tag: 'aloe',
+      description: '',
+      cdate: '2018-07-31T10:13:51-05:00',
+      subscriber_count: '3',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/146/contactGoalTags',
+      },
+      id: '146',
+    },
+    {
+      tagType: 'contact',
+      tag: 'JELLY GUMMY',
+      description: '',
+      cdate: '2016-12-21T10:55:54-06:00',
+      subscriber_count: '5',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/1/contactGoalTags',
+      },
+      id: '1',
+    },
+    {
+      tagType: 'contact',
+      tag: 'pork',
+      description: '',
+      cdate: '2017-08-18T09:54:00-05:00',
+      subscriber_count: '1',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/10/contactGoalTags',
+      },
+      id: '10',
+    },
+    {
+      tagType: 'contact',
+      tag: 'cheesiest',
+      description: '',
+      cdate: '2016-12-27T14:43:21-06:00',
+      subscriber_count: '7',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/3/contactGoalTags',
+      },
+      id: '3',
+    },
+    {
+      tagType: 'contact',
+      tag: 'p',
+      description: '',
+      cdate: '2017-01-30T10:59:32-06:00',
+      subscriber_count: '2',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/5/contactGoalTags',
+      },
+      id: '5',
+    },
+    {
+      tagType: 'contact',
+      tag: 'tacos',
+      description: '',
+      cdate: '2017-08-18T09:53:58-05:00',
+      subscriber_count: '3',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/8/contactGoalTags',
+      },
+      id: '8',
+    },
+    {
+      tagType: 'contact',
+      tag: 'gt',
+      description: '',
+      cdate: '2018-08-08T10:01:26-05:00',
+      subscriber_count: '1',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/186/contactGoalTags',
+      },
+      id: '186',
+    },
+    {
+      tagType: 'contact',
+      tag: 'gtt',
+      description: '',
+      cdate: '2018-08-08T10:09:17-05:00',
+      subscriber_count: '1',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/188/contactGoalTags',
+      },
+      id: '188',
+    },
+    {
+      tagType: 'contact',
+      tag: 'new taggg',
+      description: '',
+      cdate: '2018-03-27T10:21:22-05:00',
+      subscriber_count: '2',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/50/contactGoalTags',
+      },
+      id: '50',
+    },
+    {
+      tagType: 'contact',
+      tag: 'thisss',
+      description: '',
+      cdate: '2018-08-10T10:20:18-05:00',
+      subscriber_count: '1',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/212/contactGoalTags',
+      },
+      id: '212',
+    },
+    {
+      tagType: 'contact',
+      tag: 'polygon',
+      description: '',
+      cdate: '2019-01-16T09:36:31-06:00',
+      subscriber_count: '2',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/278/contactGoalTags',
+      },
+      id: '278',
+    },
+    {
+      tagType: 'contact',
+      tag: 'tomato',
+      description: '',
+      cdate: '2018-07-31T09:47:57-05:00',
+      subscriber_count: '2',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/145/contactGoalTags',
+      },
+      id: '145',
+    },
+    {
+      tagType: 'contact',
+      tag: 'hulk',
+      description: '',
+      cdate: '2018-08-16T10:26:01-05:00',
+      subscriber_count: '1',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/251/contactGoalTags',
+      },
+      id: '251',
+    },
+    {
+      tagType: 'contact',
+      tag: '111',
+      description: '',
+      cdate: '2018-06-21T10:52:14-05:00',
+      subscriber_count: '11',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/117/contactGoalTags',
+      },
+      id: '117',
+    },
+    {
+      tagType: 'contact',
+      tag: 'raw',
+      description: '',
+      cdate: '2018-08-17T08:34:43-05:00',
+      subscriber_count: '1',
+      links: {
+        contactGoalTags:
+          'http://lamppoststudios.api-us1.com/api/3/tags/255/contactGoalTags',
+      },
+      id: '255',
+    },
+  ],
+  contactTags: [
+    {
+      contact: '856',
+      tag: '7',
+      cdate: '2019-02-21T10:22:02-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/839/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/839/contact',
+      },
+      id: '839',
+    },
+    {
+      contact: '894',
+      tag: '7',
+      cdate: '2019-02-28T10:45:44-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/879/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/879/contact',
+      },
+      id: '879',
+    },
+    {
+      contact: '1002',
+      tag: '74',
+      cdate: '2019-06-11T11:12:06-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/956/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/956/contact',
+      },
+      id: '956',
+    },
+    {
+      contact: '1002',
+      tag: '75',
+      cdate: '2019-06-11T11:12:06-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/957/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/957/contact',
+      },
+      id: '957',
+    },
+    {
+      contact: '1002',
+      tag: '77',
+      cdate: '2019-06-11T11:12:07-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/958/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/958/contact',
+      },
+      id: '958',
+    },
+    {
+      contact: '852',
+      tag: '7',
+      cdate: '2019-02-21T09:26:30-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/835/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/835/contact',
+      },
+      id: '835',
+    },
+    {
+      contact: '853',
+      tag: '7',
+      cdate: '2019-02-21T09:27:29-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/836/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/836/contact',
+      },
+      id: '836',
+    },
+    {
+      contact: '740',
+      tag: '7',
+      cdate: '2018-11-09T10:48:39-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/733/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/733/contact',
+      },
+      id: '733',
+    },
+    {
+      contact: '740',
+      tag: '77',
+      cdate: '2019-02-14T13:18:57-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/827/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/827/contact',
+      },
+      id: '827',
+    },
+    {
+      contact: '919',
+      tag: '7',
+      cdate: '2019-03-05T16:24:06-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/903/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/903/contact',
+      },
+      id: '903',
+    },
+    {
+      contact: '203',
+      tag: '4',
+      cdate: '2018-03-22T08:58:57-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/114/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/114/contact',
+      },
+      id: '114',
+    },
+    {
+      contact: '203',
+      tag: '146',
+      cdate: '2018-07-31T10:13:51-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/348/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/348/contact',
+      },
+      id: '348',
+    },
+    {
+      contact: '203',
+      tag: '1',
+      cdate: '2018-07-31T10:18:24-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/349/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/349/contact',
+      },
+      id: '349',
+    },
+    {
+      contact: '203',
+      tag: '10',
+      cdate: '2018-07-31T10:43:18-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/351/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/351/contact',
+      },
+      id: '351',
+    },
+    {
+      contact: '203',
+      tag: '3',
+      cdate: '2018-07-31T15:37:03-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/353/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/353/contact',
+      },
+      id: '353',
+    },
+    {
+      contact: '203',
+      tag: '5',
+      cdate: '2018-07-31T15:37:43-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/354/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/354/contact',
+      },
+      id: '354',
+    },
+    {
+      contact: '203',
+      tag: '8',
+      cdate: '2018-07-31T15:48:49-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/356/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/356/contact',
+      },
+      id: '356',
+    },
+    {
+      contact: '203',
+      tag: '186',
+      cdate: '2018-08-08T10:01:26-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/390/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/390/contact',
+      },
+      id: '390',
+    },
+    {
+      contact: '203',
+      tag: '188',
+      cdate: '2018-08-08T10:09:17-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/391/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/391/contact',
+      },
+      id: '391',
+    },
+    {
+      contact: '203',
+      tag: '50',
+      cdate: '2018-08-10T10:14:46-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/401/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/401/contact',
+      },
+      id: '401',
+    },
+    {
+      contact: '203',
+      tag: '212',
+      cdate: '2018-08-10T10:20:20-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/402/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/402/contact',
+      },
+      id: '402',
+    },
+    {
+      contact: '920',
+      tag: '7',
+      cdate: '2019-03-05T16:26:15-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/904/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/904/contact',
+      },
+      id: '904',
+    },
+    {
+      contact: '911',
+      tag: '7',
+      cdate: '2019-03-05T15:47:08-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/895/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/895/contact',
+      },
+      id: '895',
+    },
+    {
+      contact: '912',
+      tag: '7',
+      cdate: '2019-03-05T15:50:43-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/896/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/896/contact',
+      },
+      id: '896',
+    },
+    {
+      contact: '382',
+      tag: '74',
+      cdate: '2018-08-15T08:27:20-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/423/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/423/contact',
+      },
+      id: '423',
+    },
+    {
+      contact: '382',
+      tag: '278',
+      cdate: '2019-01-16T09:50:25-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/761/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/761/contact',
+      },
+      id: '761',
+    },
+    {
+      contact: '918',
+      tag: '7',
+      cdate: '2019-03-05T16:15:55-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/902/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/902/contact',
+      },
+      id: '902',
+    },
+    {
+      contact: '916',
+      tag: '7',
+      cdate: '2019-03-05T16:08:03-06:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/900/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/900/contact',
+      },
+      id: '900',
+    },
+    {
+      contact: '578',
+      tag: '145',
+      cdate: '2018-08-16T10:26:07-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/470/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/470/contact',
+      },
+      id: '470',
+    },
+    {
+      contact: '578',
+      tag: '251',
+      cdate: '2018-08-16T10:26:08-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/471/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/471/contact',
+      },
+      id: '471',
+    },
+    {
+      contact: '578',
+      tag: '117',
+      cdate: '2018-08-16T13:46:25-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/476/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/476/contact',
+      },
+      id: '476',
+    },
+    {
+      contact: '578',
+      tag: '1',
+      cdate: '2018-08-17T08:34:43-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/499/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/499/contact',
+      },
+      id: '499',
+    },
+    {
+      contact: '578',
+      tag: '255',
+      cdate: '2018-08-17T08:34:43-05:00',
+      links: {
+        tag: 'http://lamppoststudios.api-us1.com/api/3/contactTags/500/tag',
+        contact:
+          'http://lamppoststudios.api-us1.com/api/3/contactTags/500/contact',
+      },
+      id: '500',
+    },
+  ],
   deals: [
     {
       hash: 'f76b28a8',
@@ -3035,6 +3642,7 @@ export const response = {
       scoreValues: ['2352', '2361', '2370', '2803', '2811'],
       deals: ['518'],
       geoIps: [],
+      contactTags: ['839'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/856/bounceLogs',
@@ -3103,6 +3711,7 @@ export const response = {
       scoreValues: ['2461', '2473', '2485', '2650', '2651'],
       deals: [],
       geoIps: [],
+      contactTags: ['879'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/894/bounceLogs',
@@ -3170,6 +3779,7 @@ export const response = {
       scoreValues: ['2743', '2751', '2759'],
       deals: [],
       geoIps: [],
+      contactTags: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/971/bounceLogs',
@@ -3237,6 +3847,7 @@ export const response = {
       scoreValues: ['2645', '2647', '2649'],
       deals: [],
       geoIps: [],
+      contactTags: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/946/bounceLogs',
@@ -3304,6 +3915,7 @@ export const response = {
       scoreValues: ['2927', '2931', '2935'],
       deals: [],
       geoIps: [],
+      contactTags: ['956', '957', '958'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/1002/bounceLogs',
@@ -3371,6 +3983,7 @@ export const response = {
       scoreValues: ['2672', '2685', '2698'],
       deals: [],
       geoIps: [],
+      contactTags: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/951/bounceLogs',
@@ -3438,6 +4051,7 @@ export const response = {
       scoreValues: ['2930', '2934', '2938'],
       deals: [],
       geoIps: [],
+      contactTags: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/1000/bounceLogs',
@@ -3505,6 +4119,7 @@ export const response = {
       scoreValues: ['2357', '2366', '2375'],
       deals: [],
       geoIps: [],
+      contactTags: ['835'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/852/bounceLogs',
@@ -3573,6 +4188,7 @@ export const response = {
       scoreValues: ['2358', '2367', '2376', '2659', '2660'],
       deals: ['497'],
       geoIps: [],
+      contactTags: ['836'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/853/bounceLogs',
@@ -3641,6 +4257,7 @@ export const response = {
       scoreValues: ['2928', '2932', '2936'],
       deals: [],
       geoIps: [],
+      contactTags: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/1001/bounceLogs',
@@ -3709,6 +4326,7 @@ export const response = {
       scoreValues: ['1746', '1752', '1758', '2206', '2226'],
       deals: [],
       geoIps: [],
+      contactTags: ['733', '827'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/740/bounceLogs',
@@ -3776,6 +4394,7 @@ export const response = {
       scoreValues: ['2527', '2544', '2561'],
       deals: [],
       geoIps: [],
+      contactTags: ['903'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/919/bounceLogs',
@@ -3868,6 +4487,19 @@ export const response = {
       ],
       deals: ['370', '427', '438', '475', '485', '528'],
       geoIps: [],
+      contactTags: [
+        '114',
+        '348',
+        '349',
+        '351',
+        '353',
+        '354',
+        '356',
+        '390',
+        '391',
+        '401',
+        '402',
+      ],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/203/bounceLogs',
@@ -3936,6 +4568,7 @@ export const response = {
       scoreValues: ['2523', '2540', '2557', '2978', '2981'],
       deals: ['542'],
       geoIps: [],
+      contactTags: ['904'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/920/bounceLogs',
@@ -4004,6 +4637,7 @@ export const response = {
       scoreValues: ['2517', '2534', '2551'],
       deals: [],
       geoIps: [],
+      contactTags: ['895'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/911/bounceLogs',
@@ -4072,6 +4706,7 @@ export const response = {
       scoreValues: ['2530', '2547', '2564'],
       deals: [],
       geoIps: [],
+      contactTags: ['896'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/912/bounceLogs',
@@ -4162,6 +4797,7 @@ export const response = {
       ],
       deals: ['357', '444', '479', '510'],
       geoIps: [],
+      contactTags: ['423', '761'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/382/bounceLogs',
@@ -4229,6 +4865,7 @@ export const response = {
       scoreValues: ['2525', '2542', '2559'],
       deals: [],
       geoIps: [],
+      contactTags: ['902'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/918/bounceLogs',
@@ -4297,6 +4934,7 @@ export const response = {
       scoreValues: ['2524', '2541', '2558'],
       deals: [],
       geoIps: [],
+      contactTags: ['900'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/916/bounceLogs',
@@ -4391,6 +5029,7 @@ export const response = {
       ],
       deals: ['376', '415', '524', '525', '526', '543'],
       geoIps: [],
+      contactTags: ['470', '471', '476', '499', '500'],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/578/bounceLogs',
@@ -4443,7 +5082,7 @@ export const response = {
       waitid: 0,
       status: -1,
       forceQuery: 0,
-      cacheid: '11fb740ca402af165021ccbcf9a3a724',
+      cacheid: 'ee09079816323664cd7dcfe34f8505de',
     },
   },
 };

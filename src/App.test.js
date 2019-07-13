@@ -30,4 +30,12 @@ describe('data derivation', () => {
       );
     });
   });
+
+  describe('contactTags', () => {
+    test('computes contact tags', () => {
+      expect(component.instance().contactTags(response.contacts[0])).toEqual([
+        'Success!',
+      ]);
+    });
+  });
 });

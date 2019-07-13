@@ -3,13 +3,15 @@ import './App.sass';
 
 const { REACT_APP_API_KEY, REACT_APP_API_URL } = process.env;
 
-const sideloadArgs = ['deals', 'geoIps'];
+const sideloadArgs = ['deals', 'geoIps.geoAddress', 'contactTags.tag'];
 const url = `${REACT_APP_API_URL}?include=${[sideloadArgs.join(',')]}`;
 
 export default class App extends Component {
   state = {
     contacts: [],
+    contactTags: [],
     deals: [],
+    tags: [],
   };
 
   constructor() {
@@ -32,6 +34,12 @@ export default class App extends Component {
       .catch(() => {})
       .then(res => res.json());
 
+  async hydrate() {
+    const { contacts, contactTags, deals, tags } = await App.fetchContacts();
+
+    this.setState({ contacts, contactTags, deals, tags });
+  }
+
   /**
    * @param {Object} contact
    * @returns {number}
@@ -43,15 +51,19 @@ export default class App extends Component {
       0
     ) / 100;
 
-  async hydrate() {
-    const { contacts, deals } = await App.fetchContacts();
+  contactTags = contact =>
+    contact.contactTags.map(contactTag => {
+      const { tag: tagId } = this.state.contactTags.find(
+        ({ id }) => id === contactTag
+      );
+      const { tag } = this.state.tags.find(({ id }) => id === tagId);
 
-    this.setState({ contacts, deals });
-  }
+      return tag;
+    });
 
   render() {
     const {
-      state: { contacts, deals },
+      state: { contacts, contactTags, deals, tags },
     } = this;
 
     return (
@@ -78,11 +90,16 @@ export default class App extends Component {
                 */}
                 <td>(Unavailable)</td>
                 <td>{contact.deals.length}</td>
+                <td>{this.contactTags(contact).join(', ') || '-'}</td>
               </tr>
             ))}
           </tbody>
         </table>
-        {contacts && <pre>{JSON.stringify({ contacts, deals }, null, 2)}</pre>}
+        {contacts && (
+          <pre>
+            {JSON.stringify({ contacts, contactTags, deals, tags }, null, 2)}
+          </pre>
+        )}
       </div>
     );
   }
