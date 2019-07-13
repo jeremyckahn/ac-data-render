@@ -3,7 +3,7 @@ import './App.sass';
 
 const { REACT_APP_API_KEY, REACT_APP_API_URL } = process.env;
 
-const sideloadArgs = ['deals'];
+const sideloadArgs = ['deals', 'geoIps'];
 const url = `${REACT_APP_API_URL}?include=${[sideloadArgs.join(',')]}`;
 
 export default class App extends Component {
@@ -61,7 +61,8 @@ export default class App extends Component {
             <tr>
               <th>Contact Name</th>
               <th>Total Value</th>
-              <th>Location Deals</th>
+              <th>Location</th>
+              <th>Deals</th>
               <th>Tags</th>
             </tr>
           </thead>
@@ -70,6 +71,12 @@ export default class App extends Component {
               <tr key={i}>
                 <td>{`${contact.firstName} ${contact.lastName}`}</td>
                 <td>${this.contactValue(contact).toLocaleString()}</td>
+                {/*
+                Location data does not appear to be available in the API
+                response, so short of guessing how to implement it, it is left
+                blank here.
+                */}
+                <td>(Unavailable)</td>
               </tr>
             ))}
           </tbody>

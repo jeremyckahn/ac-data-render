@@ -929,6 +929,7 @@ export const response = {
       customerAccount: '117',
     },
   ],
+  geoIps: [],
   scoreValues: [
     {
       score: '1',
@@ -3033,6 +3034,7 @@ export const response = {
       updated_utc_timestamp: '2019-07-08 13:14:59',
       scoreValues: ['2352', '2361', '2370', '2803', '2811'],
       deals: ['518'],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/856/bounceLogs',
@@ -3100,6 +3102,7 @@ export const response = {
       updated_utc_timestamp: '2019-06-10 11:50:35',
       scoreValues: ['2461', '2473', '2485', '2650', '2651'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/894/bounceLogs',
@@ -3166,6 +3169,7 @@ export const response = {
       updated_utc_timestamp: '2019-07-01 18:53:04',
       scoreValues: ['2743', '2751', '2759'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/971/bounceLogs',
@@ -3232,6 +3236,7 @@ export const response = {
       updated_utc_timestamp: '2019-06-24 11:41:13',
       scoreValues: ['2645', '2647', '2649'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/946/bounceLogs',
@@ -3298,6 +3303,7 @@ export const response = {
       updated_utc_timestamp: '2019-06-11 11:12:07',
       scoreValues: ['2927', '2931', '2935'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/1002/bounceLogs',
@@ -3364,6 +3370,7 @@ export const response = {
       updated_utc_timestamp: '2019-06-21 14:35:41',
       scoreValues: ['2672', '2685', '2698'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/951/bounceLogs',
@@ -3430,6 +3437,7 @@ export const response = {
       updated_utc_timestamp: '2019-05-02 14:46:36',
       scoreValues: ['2930', '2934', '2938'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/1000/bounceLogs',
@@ -3496,6 +3504,7 @@ export const response = {
       updated_utc_timestamp: '2019-02-21 12:00:05',
       scoreValues: ['2357', '2366', '2375'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/852/bounceLogs',
@@ -3563,6 +3572,7 @@ export const response = {
       updated_utc_timestamp: '2019-04-15 13:53:08',
       scoreValues: ['2358', '2367', '2376', '2659', '2660'],
       deals: ['497'],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/853/bounceLogs',
@@ -3630,6 +3640,7 @@ export const response = {
       updated_utc_timestamp: '2019-05-24 17:50:02',
       scoreValues: ['2928', '2932', '2936'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/1001/bounceLogs',
@@ -3697,6 +3708,7 @@ export const response = {
       updated_utc_timestamp: '2019-05-28 11:00:40',
       scoreValues: ['1746', '1752', '1758', '2206', '2226'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/740/bounceLogs',
@@ -3763,6 +3775,7 @@ export const response = {
       updated_utc_timestamp: '2019-03-05 22:30:15',
       scoreValues: ['2527', '2544', '2561'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/919/bounceLogs',
@@ -3854,6 +3867,7 @@ export const response = {
         '3024',
       ],
       deals: ['370', '427', '438', '475', '485', '528'],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/203/bounceLogs',
@@ -3921,6 +3935,7 @@ export const response = {
       updated_utc_timestamp: '2019-07-08 17:35:54',
       scoreValues: ['2523', '2540', '2557', '2978', '2981'],
       deals: ['542'],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/920/bounceLogs',
@@ -3988,6 +4003,7 @@ export const response = {
       updated_utc_timestamp: '2019-05-07 09:55:10',
       scoreValues: ['2517', '2534', '2551'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/911/bounceLogs',
@@ -4055,6 +4071,7 @@ export const response = {
       updated_utc_timestamp: '2019-05-30 12:12:36',
       scoreValues: ['2530', '2547', '2564'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/912/bounceLogs',
@@ -4144,6 +4161,7 @@ export const response = {
         '2809',
       ],
       deals: ['357', '444', '479', '510'],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/382/bounceLogs',
@@ -4210,6 +4228,7 @@ export const response = {
       updated_utc_timestamp: '2019-03-05 22:30:14',
       scoreValues: ['2525', '2542', '2559'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/918/bounceLogs',
@@ -4277,6 +4296,7 @@ export const response = {
       updated_utc_timestamp: '2019-05-29 23:00:59',
       scoreValues: ['2524', '2541', '2558'],
       deals: [],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/916/bounceLogs',
@@ -4370,6 +4390,7 @@ export const response = {
         '2980',
       ],
       deals: ['376', '415', '524', '525', '526', '543'],
+      geoIps: [],
       links: {
         bounceLogs:
           'http://lamppoststudios.api-us1.com/api/3/contacts/578/bounceLogs',
@@ -4422,7 +4443,7 @@ export const response = {
       waitid: 0,
       status: -1,
       forceQuery: 0,
-      cacheid: '5577dd5338a6f83b93cf3c5b0feea7b6',
+      cacheid: '11fb740ca402af165021ccbcf9a3a724',
     },
   },
 };
