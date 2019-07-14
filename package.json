@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "now-logs": "0.0.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "request": "^2.88.0",
     "typeface-ibm-plex-sans": "0.0.61"
   },
   "scripts": {
@@ -15,7 +19,9 @@
     "lint": "eslint src",
     "predeploy": "npm run build",
     "prettier": "prettier 'src/**/*.js' --write",
-    "start": "react-scripts start",
+    "start:frontend": "react-scripts start",
+    "start": "node ./src/proxy.js",
+    "start:local-proxy": "cross-env DEVELOPMENT=true node ./src/proxy.js",
     "test": "react-scripts test"
   },
   "eslintConfig": {
@@ -44,6 +50,9 @@
   "craGenerate": {
     "cssExtension": "sass",
     "type": "functional"
+  },
+  "now": {
+    "alias": "jck-ac-proxy"
   },
   "devDependencies": {
     "compass-mixins": "^0.12.10",
