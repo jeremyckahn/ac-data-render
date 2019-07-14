@@ -1,5 +1,6 @@
 {
   "name": "ac-data-render",
+  "homepage": "http://jeremyckahn.github.io/ac-data-render/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
