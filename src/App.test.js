@@ -26,6 +26,24 @@ describe('rendering', () => {
 });
 
 describe('data derivation', () => {
+  describe('contactAvatar', () => {
+    describe('name is not available', () => {
+      test('returns default value', () => {
+        expect(
+          component.instance().contactAvatar(contactsResponse.contacts[0])
+        ).toEqual('');
+      });
+    });
+
+    describe('name is available', () => {
+      test('returns initials', () => {
+        expect(
+          component.instance().contactAvatar(contactsResponse.contacts[12])
+        ).toEqual('TG');
+      });
+    });
+  });
+
   describe('contactName', () => {
     describe('name is not available', () => {
       test('returns default value', () => {

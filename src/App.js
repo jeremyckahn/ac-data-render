@@ -68,6 +68,14 @@ export default class App extends Component {
    * @param {Object} contact
    * @returns {string}
    */
+  contactAvatar = ({ firstName, lastName }) => {
+    return firstName && lastName ? `${firstName[0]}${lastName[0]}` : '';
+  };
+
+  /**
+   * @param {Object} contact
+   * @returns {string}
+   */
   contactName = ({ firstName, lastName }) => {
     return firstName || lastName ? `${firstName} ${lastName}` : '-';
   };
@@ -138,7 +146,10 @@ export default class App extends Component {
           <tbody>
             {contacts.map((contact, i) => (
               <tr key={i}>
-                <td className="name">{this.contactName(contact)}</td>
+                <td className="name">
+                  <span className="avatar">{this.contactAvatar(contact)}</span>
+                  <span className="full-name">{this.contactName(contact)}</span>
+                </td>
                 <td>${this.contactValue(contact).toLocaleString()}</td>
                 {/*
                 The use case for displaying multiple locations is unknown, so just display the first one.
