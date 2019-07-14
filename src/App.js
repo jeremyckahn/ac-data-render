@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.sass';
 
-const { REACT_APP_API_KEY, REACT_APP_API_URL } = process.env;
+const { REACT_APP_API_URL } = process.env;
 
 const sideloadArgs = ['deals', 'geoIps.geoAddress', 'contactTags.tag'];
 const limit = 100;
@@ -12,11 +12,11 @@ const url = `${REACT_APP_API_URL}?include=${[
 
 export default class App extends Component {
   state = {
-    contacts: [],
     contactTags: [],
+    contacts: [],
+    deals: [],
     geoAddresses: [],
     geoIps: [],
-    deals: [],
     tags: [],
   };
 
@@ -29,13 +29,6 @@ export default class App extends Component {
   static fetchContacts = () =>
     fetch(url, {
       method: 'GET',
-      headers: {
-        // Ideally REACT_APP_API_KEY would be provided by some sort of session
-        // broker, but that is out of scope for this project.
-        'Api-Token': REACT_APP_API_KEY,
-        'x-requested-with': 'xhr',
-        'Content-Type': 'application/json',
-      },
     })
       .catch(() => {})
       .then(res => res.json());
@@ -43,20 +36,20 @@ export default class App extends Component {
   async hydrate() {
     try {
       const {
-        contacts,
         contactTags,
+        contacts,
+        deals,
         geoAddresses,
         geoIps,
-        deals,
         tags,
       } = await App.fetchContacts();
 
       this.setState({
-        contacts,
         contactTags,
+        contacts,
+        deals,
         geoAddresses,
         geoIps,
-        deals,
         tags,
       });
     } catch (err) {
@@ -133,6 +126,13 @@ export default class App extends Component {
 
     return (
       <div className="App">
+        {!contacts.length && (
+          <p>
+            Loading data. Please wait a moment. Wait times will be a bit longer
+            for cold boots, but rest assured that there will be data below
+            shortly!
+          </p>
+        )}
         <table>
           <thead>
             <tr>

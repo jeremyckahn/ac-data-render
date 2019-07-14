@@ -21,6 +21,7 @@
     "prettier": "prettier 'src/**/*.js' --write",
     "start:frontend": "react-scripts start",
     "start": "node ./src/proxy.js",
+    "start:dev": "run-p start:local-proxy start:frontend",
     "start:local-proxy": "cross-env DEVELOPMENT=true node ./src/proxy.js",
     "test": "react-scripts test"
   },
@@ -62,6 +63,7 @@
     "gh-pages": "^2.0.1",
     "husky": "^3.0.0",
     "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1"
   }

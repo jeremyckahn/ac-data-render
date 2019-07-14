@@ -40,6 +40,6 @@ app.get('/:endpoint', function(req, res, next) {
   );
 });
 
-srv.listen(3000, function() {
-  console.log('Listening on 3000');
+srv.listen(3010, function() {
+  console.log('Listening on 3010');
 });
