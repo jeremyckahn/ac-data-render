@@ -147,7 +147,9 @@ export default class App extends Component {
             {contacts.map((contact, i) => (
               <tr key={i}>
                 <td className="name">
-                  <span className="avatar">{this.contactAvatar(contact)}</span>
+                  <span className="avatar" aria-hidden="true">
+                    {this.contactAvatar(contact)}
+                  </span>
                   <span className="full-name">{this.contactName(contact)}</span>
                 </td>
                 <td>${this.contactValue(contact).toLocaleString()}</td>
