@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c55df0f3.chunk.css",
-    "main.js": "/static/js/main.76de1c21.chunk.js",
-    "main.js.map": "/static/js/main.76de1c21.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.f8b5058a.chunk.css": "/static/css/2.f8b5058a.chunk.css",
-    "static/js/2.40a8b625.chunk.js": "/static/js/2.40a8b625.chunk.js",
-    "static/js/2.40a8b625.chunk.js.map": "/static/js/2.40a8b625.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e24d0c642e6ffdf56a1f04dc5fd349cb.js": "/precache-manifest.e24d0c642e6ffdf56a1f04dc5fd349cb.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.f8b5058a.chunk.css.map": "/static/css/2.f8b5058a.chunk.css.map",
-    "static/css/main.c55df0f3.chunk.css.map": "/static/css/main.c55df0f3.chunk.css.map",
-    "static/media/index.css": "/static/media/ibm-plex-sans-latin-700italic.f99abbd2.woff"
+    "main.css": "/ac-data-render/static/css/main.c55df0f3.chunk.css",
+    "main.js": "/ac-data-render/static/js/main.cc4e050c.chunk.js",
+    "main.js.map": "/ac-data-render/static/js/main.cc4e050c.chunk.js.map",
+    "runtime~main.js": "/ac-data-render/static/js/runtime~main.f9104c4c.js",
+    "runtime~main.js.map": "/ac-data-render/static/js/runtime~main.f9104c4c.js.map",
+    "static/css/2.2de7dc56.chunk.css": "/ac-data-render/static/css/2.2de7dc56.chunk.css",
+    "static/js/2.40a8b625.chunk.js": "/ac-data-render/static/js/2.40a8b625.chunk.js",
+    "static/js/2.40a8b625.chunk.js.map": "/ac-data-render/static/js/2.40a8b625.chunk.js.map",
+    "index.html": "/ac-data-render/index.html",
+    "precache-manifest.b209a08075e7c20e36b0fa69785dde1f.js": "/ac-data-render/precache-manifest.b209a08075e7c20e36b0fa69785dde1f.js",
+    "service-worker.js": "/ac-data-render/service-worker.js",
+    "static/css/2.2de7dc56.chunk.css.map": "/ac-data-render/static/css/2.2de7dc56.chunk.css.map",
+    "static/css/main.c55df0f3.chunk.css.map": "/ac-data-render/static/css/main.c55df0f3.chunk.css.map",
+    "static/media/index.css": "/ac-data-render/static/media/ibm-plex-sans-latin-700italic.f99abbd2.woff"
   }
 }
