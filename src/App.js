@@ -138,7 +138,7 @@ export default class App extends Component {
           <tbody>
             {contacts.map((contact, i) => (
               <tr key={i}>
-                <td>{this.contactName(contact)}</td>
+                <td className="name">{this.contactName(contact)}</td>
                 <td>${this.contactValue(contact).toLocaleString()}</td>
                 {/*
                 The use case for displaying multiple locations is unknown, so just display the first one.

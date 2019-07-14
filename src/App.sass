@@ -1,1 +1,27 @@
+@import ./sass/variables
+
 .App
+  font-size: 16px
+  font-family: 'Poppins', 'Avenir', 'Avenir Next', 'Futura', helvetica, arial, sans-serif
+
+  table
+    border: $slate-40 1px solid
+    color: $slate-120
+    margin: 16px 12px
+
+    thead
+      color: $slate-80
+
+
+    th, td
+      text-align: left
+      border-bottom: $slate-40 1px solid
+      padding: 12px
+
+    tr
+      &:nth-child(2n)
+        td
+          background-color: $ocean-20
+
+      &.name
+        color: $ocean-120
