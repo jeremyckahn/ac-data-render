@@ -133,6 +133,7 @@ export default class App extends Component {
 
     return (
       <div className="App">
+        {!contacts.length && <p>Loading data, please wait...</p>}
         <table>
           <thead>
             <tr>
