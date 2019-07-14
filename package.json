@@ -20,9 +20,9 @@
     "predeploy": "npm run build",
     "prettier": "prettier 'src/**/*.js' --write",
     "start:frontend": "react-scripts start",
-    "start": "node ./src/proxy.js",
+    "start": "node -r dotenv/config ./src/proxy.js",
     "start:dev": "run-p start:local-proxy start:frontend",
-    "start:local-proxy": "cross-env DEVELOPMENT=true node ./src/proxy.js",
+    "start:local-proxy": "node -r dotenv/config ./src/proxy.js dotenv_config_path=.env.local",
     "test": "react-scripts test"
   },
   "eslintConfig": {

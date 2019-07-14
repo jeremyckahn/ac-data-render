@@ -1,10 +1,3 @@
-const path = require('path');
-const envFile = path.resolve(
-  process.cwd(),
-  process.env.DEVELOPMENT ? '.env.local' : '.env'
-);
-require('dotenv').config({ path: envFile });
-
 const app = require('express')();
 const srv = require('http').createServer(app);
 const request = require('request');
