@@ -1,7 +1,7 @@
 @import ./sass/variables
 
 .App
-  font-size: 13px
+  font-size: 14px
   font-family: 'IBM Plex Sans', Helvetica, sans-serif
 
   table
@@ -9,18 +9,17 @@
     color: $slate-120
     margin: 16px 12px
 
-    thead
-      color: $slate-80
-
-
     th, td
       text-align: left
       border-bottom: $slate-40 1px solid
-      padding: 16px
+      padding: 16px 12px
 
     tr
       th
-        padding: 12px
+        color: $slate-80
+        font-size: 12px
+        font-weight: 500
+        padding: 8px 12px
 
     tr
       &:nth-child(2n)
@@ -29,3 +28,6 @@
 
       .name
         color: $ocean-120
+
+      .deals
+        text-align: center

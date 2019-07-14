@@ -128,7 +128,7 @@ export default class App extends Component {
         <table>
           <thead>
             <tr>
-              <th>Contact Name</th>
+              <th>Contact</th>
               <th>Total Value</th>
               <th>Location</th>
               <th>Deals</th>
@@ -144,7 +144,7 @@ export default class App extends Component {
                 The use case for displaying multiple locations is unknown, so just display the first one.
                 */}
                 <td>{this.contactLocations(contact)[0] || '-'}</td>
-                <td>{contact.deals.length}</td>
+                <td className="deals">{contact.deals.length}</td>
                 <td>{this.contactTags(contact).join(', ') || '-'}</td>
               </tr>
             ))}
