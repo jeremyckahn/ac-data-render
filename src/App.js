@@ -88,7 +88,7 @@ export default class App extends Component {
     contact.deals.reduce((acc, dealId) => {
       const deal = this.state.deals.find(({ id }) => id === dealId);
 
-      return deal ? acc + Number(deal.value) : 0;
+      return acc + (deal ? Number(deal.value) : 0);
     }, 0) / 100;
 
   /**
